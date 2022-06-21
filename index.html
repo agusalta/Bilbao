@@ -13,10 +13,11 @@
     <title>Bilbao</title>
 </head>
 <body>
-   <header>
+  <div class="gridContainer">
+   <header style="grid-area: header;">
             <nav>
                 <ul class="menu">
-                    <li><img src="assets/icons/bilbao_header (1).png"></li>
+                    <li> <img src="assets/icons/bilbao_header (1).png"></li>
                     <li> <a href="index.html">Inicio</a></li>
                     <li> <a href="Galeria.html">Galeria</a></li>
                     <li> <a href="Contacto.html">Contacto</a></li>
@@ -25,16 +26,7 @@
                 </ul>
             </nav>
    </header>
-      
-   <!-- Breve descripcion del sitio web-->
-   
-   <body>
-        
-     <section>
-            <h2 class="tituloPag"></h2>
-    </section>
-    
-    <div>
+    <main style="grid-area: main;">
         <table class="customTable">
             <thead>
               <tr>
@@ -71,19 +63,21 @@
               </tr>
             </tbody>
           </table>
-    </div> 
-       
-</body>
-   
-<hr />
-
-<footer>
-    <li><i class="fa fa-twitter" style="font-size:24px"></i></li>
-    <li><i class="fa fa-instagram" style="font-size:24px"></i></li>
-    <li><i class="fa fa-facebook" style="font-size:24px"></i></li>
-<section>
-    <!--Copyright &copy; -->
-</section>
-</footer>
+    </main>
+    <aside>
+      hola
+    </aside>
+    <footer style="grid-area: footer;">
+      <div>
+        <li><i class="fa fa-twitter" style="font-size:24px"></i></li>
+        <li><i class="fa fa-instagram" style="font-size:24px"></i></li>
+        <li><i class="fa fa-facebook" style="font-size:24px"></i></li>
+      </div>
+      <div>
+            <!--Copyright &copy; -->
+      </div>
+    </footer>
+    
+  </div> 
 </html>
 

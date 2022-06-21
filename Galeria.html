@@ -10,12 +10,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <title>Bilbao</title>
-
 </head>
+
 <body>
-   <header>
+<div class="gridContainer">
+    <header style="grid-area: header;">
             <nav>
                 <ul class="menu">
                     <li><img src="assets/icons/bilbao_header (1).png"></li>
@@ -27,12 +27,8 @@
                 </ul>
             </nav>
    </header> 
-
-   <div>
-       <h2 class="tituloPag""></h2>
-    </div>
-    
-   <div class="galeria"> 
+    <main style="grid-area: main;">
+    <div class="galeria"> 
         <img class="pinturas" src="assets/pintura_1-.jpg">
         <section>
             <article>
@@ -40,7 +36,7 @@
                 <p class="textoPinturas2">Acrilico 100x100</p>
             </article>
         </section>
-   </div>
+    </div>
     <div class="galeria">
         <img class="pinturas" src="assets/pintura_2-.jpg">
         <section>
@@ -104,8 +100,9 @@
             </article>
         </section>
     </div> 
-<hr />
-<footer>
+</div>
+</main>
+<footer style="grid-area: footer;">
     <li><i class="fa fa-twitter" style="font-size:24px"></i></li>
     <li><i class="fa fa-instagram" style="font-size:24px"></i></li>
     <li><i class="fa fa-facebook" style="font-size:24px"></i></li>
