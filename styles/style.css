@@ -25,18 +25,16 @@ h1 {
 
 .gridContainer {
   display: grid;
-  grid-template-columns: 90% auto; 
+  grid-template-columns: 70% auto; 
   grid-template-rows: ;
   grid-template-areas:
-  "header header"
-  "main aside"
-  "main aside"
-  "footer footer";
+  "header header header"
+  "main main aside"
+  "main main aside"
+  "footer footer aside";
 }
 
-
 /* Header - Navegacion */
-
 
 header {
   grid-area: header;
@@ -50,11 +48,13 @@ header {
 main {
   grid-area: main;
   border: 10px solid yellow;
+  height: fit-content;
 }
 
 aside {
   grid-area: aside;
   border: 10px solid blue;
+  background-color: #ACAD94;
 }
 
 footer{
