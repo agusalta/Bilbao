@@ -37,14 +37,15 @@ main {
 
 .titulo {
   text-align: center;
-  font-size: 30px;
-  font-weight: bold;
+  font-size: 35px;
+  font-weight: bolder;
   text-transform: uppercase;
   padding: 1em;
 }
 
 h2 {
   text-transform: uppercase;
+  padding: 2rem;
 }
 
 header {
@@ -119,8 +120,7 @@ footer {
 .cuadro-container {
   position: relative;
   text-align: center;
-  padding: 2rem;
-  gap: 1rem;
+  padding: 1rem;
 }
 
 .cuadro {
@@ -148,10 +148,63 @@ button:hover {
   background-color: #0056b3;
 }
 
+/* Preview */
+
+.cuadros-preview {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.cuadros-preview .preview {
+  display: none;
+  padding: 2rem;
+  text-align: center;
+  background: #fff;
+  position: relative;
+  margin: 2rem;
+  width: 40rem;
+}
+
+.cuadros-preview .preview {
+  display: inline-block;
+}
+
+.cuadros-preview .preview img {
+  height: 30rem;
+}
+
+.cuadros-preview .preview button {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  background-color: #e1d7cb;
+}
+
+/* .cuadros-preview .preview button:hover {
+  transform: rotate(90deg);
+} */
+
+.cuadros-preview .preview h3 {
+  color: #444;
+  padding: 0.5rem 0;
+  font: 2.5rem;
+}
+
+/* Media queries */
+
 @media (max-width: 1485px) {
   .galeria-container {
     grid-template-columns: repeat(2, 1fr);
-    width: 70%;
+    width: 60%;
   }
 
   .cuadro {
@@ -166,20 +219,38 @@ button:hover {
   }
 }
 
-@media (max-width: 950px) {
+@media (max-width: 1130px) {
   .galeria-container {
     grid-template-columns: repeat(1, 1fr);
-    padding: 1rem;
+    width: 100%;
   }
 
   .cuadro {
-    max-width: 100%;
-    width: 500px;
-    height: auto;
+    width: max-content;
+    height: max-content;
   }
 
   .video {
     width: 100%;
     height: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  #titulo {
+    font-size: 20px;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
   }
 }

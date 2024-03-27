@@ -40,13 +40,13 @@
         <h2>Nuestra Galería</h2>
 
         <div class="galeria-container">
-          <div class="cuadro-container">
+          <div class="cuadro-container" data-name="p-1">
             <img class="cuadro" src="./public/src/img/calor.jpg" alt="Calor" />
             <h3>Calor</h3>
             <p>Descripción breve del cuadro.</p>
           </div>
 
-          <div class="cuadro-container">
+          <div class="cuadro-container" data-name="p-2">
             <img
               class="cuadro"
               src="./public/src/img/el giro.jpg"
@@ -57,7 +57,7 @@
             <p>Precio: $100</p>
           </div>
 
-          <div class="cuadro-container">
+          <div class="cuadro-container" data-name="p-3">
             <img
               class="cuadro"
               src="./public/src/img/el origen.jpg"
@@ -68,7 +68,7 @@
             <p>Precio: $100</p>
           </div>
 
-          <div class="cuadro-container">
+          <div class="cuadro-container" data-name="p-4">
             <img
               class="cuadro"
               src="./public/src/img/interseccion.jpg"
@@ -79,7 +79,7 @@
             <p>Precio: $100</p>
           </div>
 
-          <div class="cuadro-container">
+          <div class="cuadro-container" data-name="p-5">
             <img
               class="cuadro"
               src="./public/src/img/oleada.png"
@@ -90,7 +90,7 @@
             <p>Precio: $100</p>
           </div>
 
-          <div class="cuadro-container">
+          <div class="cuadro-container" data-name="p-6">
             <img
               class="cuadro"
               src="./public/src/img/splash.jpg"
@@ -101,7 +101,7 @@
             <p>Precio: $100</p>
           </div>
 
-          <div class="cuadro-container">
+          <div class="cuadro-container" data-name="p-7">
             <img
               class="cuadro"
               src="./public/src/img/floreciendo.jpg"
@@ -112,7 +112,7 @@
             <p>Precio: $100</p>
           </div>
 
-          <div class="cuadro-container">
+          <div class="cuadro-container" data-name="p-8">
             <img
               class="cuadro"
               src="./public/src/img/turbulencia.jpg"
@@ -122,6 +122,87 @@
             <p>Descripción breve del cuadro.</p>
             <p>Precio: $100</p>
           </div>
+        </div>
+      </section>
+
+      <section class="cuadros-preview">
+        <!-- Vista previa para el cuadro p-1 -->
+        <div class="preview" data-target="p-1">
+          <img class="cuadro" src="./public/src/img/calor.jpg" alt="Calor" />
+          <h3>Calor</h3>
+          <p>Descripción breve del cuadro.</p>
+          <button class="cerrar-modal">X</button>
+        </div>
+
+        <!-- Vista previa para el cuadro p-2 -->
+        <div class="preview" data-target="p-2">
+          <img
+            class="cuadro"
+            src="./public/src/img/el giro.jpg"
+            alt="el giro"
+          />
+          <h3>El Giro</h3>
+          <p>Descripción breve del cuadro.</p>
+          <button class="cerrar-modal">X</button>
+        </div>
+
+        <!-- Repite este bloque para cada cuadro -->
+        <div class="preview" data-target="p-3">
+          <img
+            class="cuadro"
+            src="./public/src/img/el origen.jpg"
+            alt="el origen"
+          />
+          <h3>El Origen</h3>
+          <p>Descripción breve del cuadro.</p>
+          <button class="cerrar-modal">X</button>
+        </div>
+
+        <div class="preview" data-target="p-4">
+          <img
+            class="cuadro"
+            src="./public/src/img/interseccion.jpg"
+            alt="interseccion"
+          />
+          <h3>Intersección</h3>
+          <p>Descripción breve del cuadro.</p>
+          <button class="cerrar-modal">X</button>
+        </div>
+
+        <div class="preview" data-target="p-5">
+          <img class="cuadro" src="./public/src/img/oleada.png" alt="oleada" />
+          <h3>Oleada</h3>
+          <p>Descripción breve del cuadro.</p>
+          <button class="cerrar-modal">X</button>
+        </div>
+
+        <div class="preview" data-target="p-6">
+          <img class="cuadro" src="./public/src/img/splash.jpg" alt="splash" />
+          <h3>Splash</h3>
+          <p>Descripción breve del cuadro.</p>
+          <button class="cerrar-modal">X</button>
+        </div>
+
+        <div class="preview" data-target="p-7">
+          <img
+            class="cuadro"
+            src="./public/src/img/floreciendo.jpg"
+            alt="floreciendo"
+          />
+          <h3>Floreciendo</h3>
+          <p>Descripción breve del cuadro.</p>
+          <button class="cerrar-modal">X</button>
+        </div>
+
+        <div class="preview" data-target="p-8">
+          <img
+            class="cuadro"
+            src="./public/src/img/turbulencia.jpg"
+            alt="turbulencia"
+          />
+          <h3>Turbulencia</h3>
+          <p>Descripción breve del cuadro.</p>
+          <button class="cerrar-modal">X</button>
         </div>
       </section>
     </main>
@@ -138,5 +219,7 @@
         /></a>
       </div>
     </footer>
+
+    <script type="text/javascript" src="./index.js"></script>
   </body>
 </html>
