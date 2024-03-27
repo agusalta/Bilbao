@@ -188,6 +188,7 @@ button:hover {
   border: 1px solid rgba(0, 0, 0, 0.2);
   padding: 0.5rem;
   border-radius: 50%;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .cuadros-preview .preview .cerrar-modal:hover {
