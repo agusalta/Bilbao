@@ -1,0 +1,180 @@
+/* Reset de estilos para eliminar márgenes y paddings por defecto */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* Estilos generales */
+body {
+  font-family: "Poppins";
+  line-height: 1.6;
+}
+
+main {
+  background-color: whitesmoke;
+}
+
+#inicio {
+  overflow: hidden;
+}
+
+.video-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.video {
+  width: 70%;
+  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 1em;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #494949;
+  color: #fff;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style-type: none;
+  overflow-y: hidden;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 2rem;
+}
+
+main {
+  padding: 1rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+#redes img {
+  filter: invert(100%);
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  padding: 0.3rem 0.5rem 0.3rem 0.5rem;
+  background-color: #494949;
+  color: white;
+}
+
+/* Estilos específicos */
+#galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  flex-direction: column;
+}
+
+.galeria-container {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  text-align: center;
+  width: 70%;
+}
+
+.cuadro-container {
+  position: relative;
+  text-align: center;
+  padding: 2rem;
+  gap: 1rem;
+}
+
+.cuadro {
+  margin-bottom: 1rem;
+  max-width: 300px;
+  height: 300px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.cuadro:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 1285px) {
+  .galeria-container {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  }
+
+  .cuadro {
+    max-width: 100%;
+    width: 400px;
+    height: 400px;
+  }
+
+  .video {
+    width: 100vw;
+  }
+}
+
+@media (max-width: 900px) {
+  .galeria-container {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 1rem;
+  }
+
+  .cuadro {
+    max-width: 100%;
+    width: 500px;
+    height: auto;
+  }
+
+  .video {
+    width: 100%;
+    height: auto;
+  }
+}
