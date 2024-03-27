@@ -8,7 +8,7 @@
 
 /* Estilos generales */
 body {
-  font-family: "Poppins";
+  font-family: "Golos Text";
   line-height: 1.6;
 }
 
@@ -41,6 +41,10 @@ main {
   font-weight: bold;
   text-transform: uppercase;
   padding: 1em;
+}
+
+h2 {
+  text-transform: uppercase;
 }
 
 header {
@@ -86,7 +90,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  position: fixed;
+  position: static;
   width: 100%;
   bottom: 0;
   text-align: center;
@@ -121,8 +125,8 @@ footer {
 
 .cuadro {
   margin-bottom: 1rem;
-  max-width: 300px;
-  height: 300px;
+  max-width: 300px !important;
+  height: 300px !important;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
@@ -144,24 +148,25 @@ button:hover {
   background-color: #0056b3;
 }
 
-@media (max-width: 1285px) {
+@media (max-width: 1485px) {
   .galeria-container {
     grid-template-columns: repeat(2, 1fr);
-    width: 100%;
+    width: 70%;
   }
 
   .cuadro {
     max-width: 100%;
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
   }
 
   .video {
-    width: 100vw;
+    width: 80%;
+    height: auto;
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 950px) {
   .galeria-container {
     grid-template-columns: repeat(1, 1fr);
     padding: 1rem;
