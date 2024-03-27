@@ -178,16 +178,40 @@ button:hover {
   border-radius: 8px 8px 0 0;
 }
 
-.cuadros-preview .preview button {
+.cuadros-preview .preview .cerrar-modal {
   position: absolute;
   top: 1rem;
   right: 1rem;
   cursor: pointer;
   font-size: 1rem;
-  background-color: #e1d7cb;
+  background-color: #444;
   border: 1px solid rgba(0, 0, 0, 0.2);
   padding: 0.5rem;
   border-radius: 50%;
+}
+
+.cuadros-preview .preview .cerrar-modal:hover {
+  background-color: #e1d7cb;
+}
+
+.agregar-al-carrito {
+  background-color: #444;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.agregar-al-carrito:hover {
+  background-color: #e1d7cb;
+}
+
+.agregar-al-carrito:active {
+  transform: scale(0.9);
+  background-color: #e1d7cb;
 }
 
 .cuadros-preview .preview h3 {
