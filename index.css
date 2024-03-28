@@ -62,7 +62,7 @@ header {
 
 .titulo {
   text-align: center;
-  font-size: 35px;
+  font-size: calc(2vw + 14px);
   font-weight: bolder;
   text-transform: uppercase;
   padding: 1em;
@@ -279,6 +279,13 @@ button:hover {
 }
 
 @media (max-width: 1130px) {
+  .carrito-container {
+    position: fixed;
+    top: 1.5rem;
+    right: 1rem;
+    z-index: 1000;
+  }
+
   #redes {
     position: static;
     flex-direction: column;

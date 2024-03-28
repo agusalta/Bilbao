@@ -34,10 +34,3 @@ cuadroContainers.forEach(cuadro => {
   });
 });
 
-// Agregar evento de clic al botón de cierre de la vista previa
-previewBoxes.forEach(preview => {
-  preview.querySelector('.fa-times').addEventListener('click', () => {
-    preview.style.display = 'none';
-    previewContainer.style.display = 'none';
-  });
-});
