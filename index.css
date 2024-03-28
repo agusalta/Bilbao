@@ -69,6 +69,8 @@ header {
 
 h3 {
   text-transform: uppercase;
+  white-space: nowrap;
+  text-overflow: ellipsis; 
 }
 
 /* nav ul {
@@ -125,8 +127,7 @@ footer {
   width: 100%;
   bottom: 0;
   text-align: center;
-  padding: 0.3rem 0.5rem 0.3rem 0.5rem;
-  background-color: white;
+  padding: 1rem;
   color: #444;
 }
 
@@ -274,6 +275,12 @@ button:hover {
     width: 80%;
     height: auto;
   }
+
+  footer {
+    flex-direction: column;
+    padding: 1rem 2rem 1rem 2rem;
+    gap: 1rem;
+  }
 }
 
 @media (max-width: 1130px) {
@@ -322,11 +329,5 @@ button:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
-
-  footer {
-    flex-direction: column;
-    padding: 1rem;
-    gap: 1rem;
   }
 }
