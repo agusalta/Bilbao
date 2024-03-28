@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  font-family: "Golos Text";
+  font-family: "adelia";
   line-height: 1.6;
 }
 
@@ -71,6 +71,10 @@ header {
 .subtitulo {
   text-transform: uppercase;
   padding: 1rem;
+}
+
+h3 {
+  text-transform: uppercase;
 }
 
 /* nav ul {
