@@ -6,19 +6,13 @@
   overflow-x: hidden;
 }
 
-/* Estilos generales */
+body {
+  font-family: "Josefin Sans", serif;
+  background-color: whitesmoke;
+}
 
 html {
   scroll-behavior: smooth;
-}
-
-body {
-  font-family: "adelia";
-  line-height: 1.6;
-}
-
-main {
-  background-color: whitesmoke;
 }
 
 header {
@@ -34,7 +28,7 @@ header {
 
 .cantidad-productos {
   position: absolute;
-  top: 7px;
+  top: 11px;
   right: 20px;
   color: black;
   padding: 1px;
