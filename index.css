@@ -70,7 +70,7 @@ header {
 h3 {
   text-transform: uppercase;
   white-space: nowrap;
-  text-overflow: ellipsis; 
+  text-overflow: ellipsis;
 }
 
 /* nav ul {
@@ -284,7 +284,9 @@ button:hover {
 }
 
 @media (max-width: 1130px) {
+  /* Por el momento quitamos el carrito en vista mobile*/
   .carrito-container {
+    display: none; 
     position: fixed;
     top: 1.5rem;
     right: 1rem;
