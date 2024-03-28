@@ -15,15 +15,16 @@
     />
   </head>
   <body>
-    <h1 class="titulo">Maria Cecilia Bilbao</h1>
     <header>
-      <nav>
-        <ul>
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#">Contacto</a></li>
-          <li><a href="#">Carrito</a></li>
-        </ul>
-      </nav>
+      <h1 class="titulo">Maria Cecilia Bilbao</h1>
+      <div class="carrito-container">
+        <img
+          alt="carrito de compras"
+          src="./public/src/img/icons8-carrito-de-compras-48.png"
+          class="carrito-icon"
+        />
+        <span class="cantidad-productos"><strong>0</strong></span>
+      </div>
     </header>
 
     <main>
@@ -37,8 +38,8 @@
       </section>
 
       <section id="galeria">
-        <h2>Nuestra Galería</h2>
-
+        <h2 class="subtitulo">Nuestra Galería</h2>
+        <hr />
         <div class="galeria-container">
           <div class="cuadro-container" data-name="p-1">
             <img class="cuadro" src="./public/src/img/calor.jpg" alt="Calor" />
@@ -228,8 +229,18 @@
 
       <div id="redes">
         <a target="_blank" href="https://www.instagram.com/ma.ceciliabilbao/"
-          ><img alt="instagram" src="./public/src/img/icons8-instagram-48.png"
+          ><img
+            class="icon"
+            alt="instagram"
+            src="./public/src/img/instagram.png"
         /></a>
+        <a target="_blank" href="https://chatwith.io/es/s/bilbao">
+          <img
+            class="icon"
+            alt="whatsapp"
+            src="./public/src/img/whatsapp.png"
+          />
+        </a>
       </div>
     </footer>
 
